@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "username": "Bill",
+            "password": "sdlfks",
+            "branch": "navy",
+            "gender": "female",
+            "physical limitations": false           
+        },
+        {
+            "username": "Bruh",
+            "password": "sdlfksdfd",
+            "branch": "navy",
+            "gender": "male",
+            "physical limitations": true           
+        },
+        {
+            "username": "sis",
+            "password": "sdlfksfd",
+            "branch": "air force",
+            "gender": "male",
+            "physical limitations": false           
+        }
+    ]
+}
