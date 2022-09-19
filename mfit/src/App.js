@@ -22,9 +22,9 @@ export function App() {
 function App() {
   const [members, setMembers] = useState([])
   const [userData, setUserData] = useState({
-    username: '',
-    password: '',
-    name: '',
+    username: 'user1',
+    password: 'password',
+    name: 'name1',
     branch:'',
     gender:'',
     physicalLimitations:'',
