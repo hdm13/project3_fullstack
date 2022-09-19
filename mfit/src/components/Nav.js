@@ -21,6 +21,7 @@ export const NavBar = () => {
                 
                 </div>
                 <div className="menu-items">
+                <li><a href={`/account_management/${userData.name}`}>Account Management</a></li>
                 <li><a href="/">Log Out</a></li>
                 </div>
             </div>

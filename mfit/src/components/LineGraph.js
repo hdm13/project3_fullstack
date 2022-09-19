@@ -54,15 +54,15 @@ const data5 = [
 ];
 
 export const LineGraph = () => {
-    let data;
-    const { showPtScores, setShowPtScores, showPuScores, showSuScores, showRunScores, setShowPuScores, setShowSuScores, setShowRunScores } = useContext(AppContext)
-    showPtScores ? data = { data1 } : showPuScores ? data = { data1 } : showRunScores ? data = { data3 } : data = { data4 }
+    // let data;
+    // const { showPtScores, setShowPtScores, showPuScores, showSuScores, showRunScores, setShowPuScores, setShowSuScores, setShowRunScores } = useContext(AppContext)
+    // showPtScores ? data = { data1 } : showPuScores ? data = { data2 } : showRunScores ? data = { data3 } : data = { data4 }
 
 
 
 
     return (
-        <LineChart width={1050} height={400} data={data} margin={{ top: 50, right: 20, bottom: 5, left: -20 }}>
+        <LineChart width={1050} height={400} data={data1} margin={{ top: 50, right: 20, bottom: 5, left: -20 }}>
             <Line type="monotone" dataKey="uv" stroke="#8884d8" />
             {/* <Line type="monotone" dataKey="weight" stroke="82ca9d" /> */}
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />

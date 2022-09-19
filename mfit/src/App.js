@@ -5,6 +5,7 @@ import { AppContext } from "./AppContext";
 import { LoginPage } from "./components/LoginPage";
 import { UserLanding } from "./components/UserLanding";
 import Dropdown from "./components/Dropdown";
+import {AccountManagement} from "./components/AccountManagement"
 
 /*
 export function App() {
@@ -27,7 +28,6 @@ function App() {
     branch:'',
     gender:'',
     physicalLimitations:'',
-    theme: "light"
   });
 
   
@@ -57,7 +57,7 @@ function App() {
             <Route exact path="/" element={<LoginPage />} />
             <Route exact path="/member" element={<UserLanding />} />
             <Route exact path="/member/:username" element={<UserLanding />} />
-          
+            <Route exact path="/account_management/:username" element={<AccountManagement />} />
           </Routes>
         </AppContext.Provider>
       </Router>

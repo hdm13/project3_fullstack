@@ -34,7 +34,10 @@ color: black;
 
 export const UserLanding = () => {
     const [showPtScores, setShowPtScores] = useState(true)
-    const [showPuScores, showSuScores, showRunScores, setShowPuScores, setShowSuScores, setShowRunScores] = useState(false)
+    const [showPuScores, setShowPuScores]= useState(false)
+    const [showRunScores, setShowRunScores]= useState(false)
+    const [showSuScores,  setShowSuScores]= useState(false)
+
     const { userData, setUserData, members, setMembers } = useContext(AppContext)
     return (
         <>

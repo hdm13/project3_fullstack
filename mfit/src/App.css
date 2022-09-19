@@ -21,6 +21,16 @@ body{
   font-size: 30px;
   color: white;  
 }
+.content2{ 
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;  
+  flex-direction: column;
+}
 
 .centered_login{
   width: 400px;
@@ -37,6 +47,17 @@ body{
 .centered_login2{
   width: 400px;
   height: 800px;
+  background-color: #000;
+  border: 1px solid #fff;
+  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+.centered_login3{
+  width: 400px;
+  height: 600px;
   background-color: #000;
   border: 1px solid #fff;
   opacity: 0.75;
