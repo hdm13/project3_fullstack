@@ -3,11 +3,10 @@ import cors from 'cors'
 const app = express();
 import knex from 'knex';
 import knexfile from '../knexfile.js';
-const port = 8080;
 const myknex = knex(knexfile.development);
+const port = 8080;
 
 app.use(cors())
-// const myknex = knex(knexfile.development);
 app.use(express.json());
 
 //*Home Page*//
