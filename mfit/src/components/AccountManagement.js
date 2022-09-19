@@ -1,10 +1,12 @@
 import React, { useEffect, useState, useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { AppContext } from "../AppContext";
 import { NavBar } from './Nav';
 
+
 export const AccountManagement = () => {
+    let navigate = useNavigate()
     const { userData, setUserData, members, setMembers } = useContext(AppContext)
     console.log(userData)
     return(
@@ -21,7 +23,7 @@ export const AccountManagement = () => {
                     <p>Password</p>
                     <input type="text" />                   
                     <p>Height (inches)</p>
-                    <input type="text" />               
+                    <input type="text" value={`${userData.heightinches}`} />               
                     <p>Weight (pounds)</p>
                     <input type="text" />              
                     <p>Pushups</p>
@@ -30,6 +32,8 @@ export const AccountManagement = () => {
                     <input type="text" />                
                     <p>Run Time (min:sec)</p>
                     <input type="text" />
+                    <br/>
+                    <button className='accountButton' onClick={() => navigate(`/member/${userData[0].username}`)}> Submit </button>
                 </div>
             </div>
         </div>

@@ -98,10 +98,14 @@ export const LoginPage = () => {
                             <label htmlFor="password">Password:</label>
 
                             <input type="password" id='password' name='password' required/>
-                            
                             <label htmlFor="name">Name:</label>
 
                             <input type="text" id='name' name='name' required/>
+                            <label htmlFor="height">Height (inches):</label>
+                            <input type="text" id='height' name='height' required/>
+                            <label htmlFor="age">Age:</label>
+                            <input type="text" id='age' name='age' required/>
+
                             <label htmlFor="branch_input">Branch:</label>
                             <select id="branch_input">
                                 <option value="Army"> Army </option>

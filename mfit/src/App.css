@@ -57,7 +57,7 @@ body{
 }
 .centered_login3{
   width: 400px;
-  height: 600px;
+  height: 700px;
   background-color: #000;
   border: 1px solid #fff;
   opacity: 0.75;
@@ -84,10 +84,19 @@ body{
 .buttons{
   margin: 10px;
 }
+
 .footer{
  color: white;
 }
-
+.accountButton{
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 50px;
+  margin: 85px;
+  margin-top: 0;
+  color: black;
+}
 .dropdown-menu {
   position: absolute;
   transform: translate(4px);

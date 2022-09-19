@@ -5,6 +5,7 @@ import { AppContext } from "../AppContext";
 
 
 export const NavBar = () => {
+    
     const {userData, setUserData, members, setMembers} = useContext(AppContext)
     return(  
         <nav>
@@ -22,6 +23,7 @@ export const NavBar = () => {
                 </div>
                 <div className="menu-items">
                 <li><a href={`/account_management/${userData.name}`}>Account Management</a></li>
+                <li><a href={`/table`}>PT Standards</a></li>
                 <li><a href="/">Log Out</a></li>
                 </div>
             </div>

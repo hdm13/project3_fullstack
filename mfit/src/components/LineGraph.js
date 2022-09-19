@@ -53,17 +53,25 @@ const data5 = [
     { name: " Week 6", weight: 188 }
 ];
 
-export const LineGraph = () => {
-    // let data;
-    // const { showPtScores, setShowPtScores, showPuScores, showSuScores, showRunScores, setShowPuScores, setShowSuScores, setShowRunScores } = useContext(AppContext)
-    // showPtScores ? data = { data1 } : showPuScores ? data = { data2 } : showRunScores ? data = { data3 } : data = { data4 }
+export const LineGraph = ( data ) => {
+    const { showPtScores, setShowPtScores, showPuScores, showSuScores, showRunScores, setShowPuScores, setShowSuScores, setShowRunScores } = useContext(AppContext)
+    // if( showPtScores ) {
+    //     setShowPtScores.data = {data1};
+    // } else if( showPuScores ) {
+    //     setShowPuScores.data = { data2 };
+    // } else if( showRunScores ) {
+    //     setShowSuScores.data = { data3 };
+    // } else {
+    //     setShowRunScores.data = { data4 };
+    // }
 
+    // showPtScores ? data = { data1 } : showPuScores ? data = { data2 } : showRunScores ? data = { data3 } : data = { data4 }
 
 
 
     return (
         <LineChart width={1050} height={400} data={data1} margin={{ top: 50, right: 20, bottom: 5, left: -20 }}>
-            <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+            <Line type="monotone" dataKey="PtScore" stroke="#8884d8" />
             {/* <Line type="monotone" dataKey="weight" stroke="82ca9d" /> */}
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
             <XAxis dataKey="name" />
